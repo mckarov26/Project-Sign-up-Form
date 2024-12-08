@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("./img/Norse-Bold.otf") format("opentype");
+}
+
+body {
+    display: flex;
+}
+
+
+
+.image-container {
+    position: relative;    
+}
+ 
+.guild-entrance {
+  display: block;
+  height: 100vh;
+    
+}
+.logo {
+    position: absolute;
+    background-color: transparent;    
+    height: 100px;
+    width: 100px;
+    top: 200px ;
+    left: 220px;
+    
+}
+.guilds-name {
+    position: absolute;
+    font-family: "MyCustomFont", sans-serif;
+    top: 315px;
+    left: 215px;
+    color: white;
+   
+}
+
+.second-div > .firstContainer {
+    height: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 100px 50px;
+    background-color: #FBF8EF;
+  
+
+}
+
+.second-div > .secondContainer {
+    height: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 20px 50px;
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.second-div > .thirdContainer {
+    height: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 20px 50px;
+   
+}
+
+
+.thirdContainer > button {   
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #596D48;
+    color: white;
+    border: none;
+}
+
+button:hover  {
+    background-color: #79ac4d;
+}
+button:active{
+    background-color: #87c94d;
+}
+
+
+
+#myForm {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    min-width: 600px;
+    
+}
+.formContainer {
+    padding: 10px;
+    
+}
+input {
+    width: 250px;
+    height: 25px;
+    margin: 10px 0 0 0;
+    border: 1px solid #E5E7EB;
+    
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+input:valid {
+    border: 2px solid green;
+}
+
+input:focus {
+    border: 2px solid blue;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 255, 100);
+}

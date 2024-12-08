@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Sign Up</title>
+</head>
+<body>
+    <div class="first-div">
+        <div class="image-container">
+            <img src="./img/Guild Entrance.jpg" alt="guild entrance image" class="guild-entrance">
+            <img src="./img/odin-lined.png" alt="odin logo image" class="logo">
+            <p class="guilds-name">The Odin Son's Guild </p>
+        </div>    
+    </div>
+    <div class="second-div">
+        <div class="firstContainer">
+            <p>This is not a real online service! You know you need something like this in your 
+                life to help you realize your deepest dreams. Sign up now to get started.
+            </p>
+            <p>
+                You <em>know</em> you want to.
+            </p>
+        </div>
+        <div class="secondContainer">
+            <h1>Let's do this!</h1>
+            <form id="myForm" action="#" method="post">
+    
+                
+                <div class="formContainer"> 
+                    <label for="first-name" >First Name</label> <br>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your First Name" required>
+                </div>
+                
+                <div class="formContainer">
+                    <label for="last-name">Last Name</label> <br>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your Last Name" required>
+                </div>
+
+
+
+                <div class="formContainer">
+                    <label for="email">Email</label> <br>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                </div>
+
+                <div class="formContainer">
+                    <label for="number">Phone Number</label> <br>
+                    <input type="tel" id="number" name="phone-number" placeholder="Enter your Phone number" required>
+                </div>
+
+             
+
+                <div class="formContainer">
+                    <label for="password">Password</label> <br>
+                    <input type="password" id="password" name="password" placeholder="Enter New Password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" title="Password must be at least 8 characters long, contain a letter, a number, and a special character." required><br>
+                    <span id="passwordError" style="color:red; font-size: 12px;"></span>
+                </div>
+
+                <div class="formContainer">
+                    <label for="confirm-password">Confirm Password</label> <br>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your Password " pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" title="Password must be at least 8 characters long, contain a letter, a number, and a special character." required><br>
+                    <span id="confirmPasswordError" style="color:red; font-size: 12px;"></span>
+                </div>
+            </form>
+        </div>
+        <br>
+        <br>
+        <div class="thirdContainer">
+            <button type="submit" form="myForm">Create Account</button>
+            <p>Already have an account? </p>
+
+        </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
